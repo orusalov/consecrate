@@ -45,7 +45,7 @@ def start(message):
 
     bot.send_message(
         message.chat.id,
-        'Привет! Че делать будем?',
+        f'Привет! Че делать будем, {message.from_user.first_name}?',
         reply_markup=kb
     )
 
